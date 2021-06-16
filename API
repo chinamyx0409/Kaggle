@@ -1,0 +1,17 @@
+# Searching competitions
+# Signature: competitions_list(group=None, category=None, sort_by=None, page=1, search=None)
+competitions = api.competitions_list(search='titanic')
+# competitions is a list of competition objects.
+# iterate though each item to access individual competition
+for comp in competitions:
+    print(comp.ref,comp.reward,comp.userRank,sep=',')
+#list kaggle competition
+api.competitions_list_cli(search='titanic')
+api.competitions_list_cli()
+#list the dataset
+# List files for a competition
+# Signature: competitions_data_list_files(id, **kwargs)
+api.competitions_data_list_files('titanic')
+# Download all files for a competition
+# Signature: competition_download_files(competition, path=None, force=False, quiet=True)
+api.competition_download_files('titanic')
