@@ -1,3 +1,5 @@
+#https://technowhisp.com/kaggle-api-python-documentation/
+https://github.com/chinamyx0409/Kaggle/blob/main/API
 # Searching competitions
 # Signature: competitions_list(group=None, category=None, sort_by=None, page=1, search=None)
 competitions = api.competitions_list(search='titanic')
